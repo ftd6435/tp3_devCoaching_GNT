@@ -156,11 +156,15 @@ ul{
 
 @media(max-width: 768px){
     .header{
-        padding: 2rem 4rem 7rem 4rem;
+        padding: 2rem 2rem 7rem 2rem;
+    }
+
+    .navbar h1{
+        font-size: 2.2rem;
     }
 
     .navbar a{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         padding: 0.5rem 0;
     }
 
@@ -169,7 +173,7 @@ ul{
     }
 
     .profil h1{
-        font-size: 4rem;
+        font-size: 2.8rem;
     }
 
     .profil-img, .service{
@@ -189,7 +193,7 @@ ul{
     }
 
     .service li span{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .service li p{
@@ -201,6 +205,7 @@ ul{
 .business{
     width: 100%;
     text-align: center;
+    padding: 0 2rem;
 }
 
 .title{
@@ -234,13 +239,14 @@ ul{
     }
 
     .business .row .logo{
+        margin: 0;
         margin-bottom: 6rem;
     }
 }
 
 /* start services section styling */
 .services{
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     width: 100%;
 }
 
@@ -304,6 +310,7 @@ ul{
 
 @media(max-width:768px){
     .block{
+        width: 100%;
         grid-template-columns: 1fr;
         padding: 5rem 2rem;
     }
@@ -363,7 +370,7 @@ ul{
 
 .galery{
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     position: relative;
     border-radius: 10px 10px 0 0;
 }
@@ -440,7 +447,7 @@ ul{
 
 @media(max-width:768px){
     .approach, .about, .testimonial{
-        padding: 3rem 4rem;
+        padding: 3rem 2rem;
     }
 
     .approach h2, .about h2, .testimonial-title h2{
@@ -577,6 +584,11 @@ ul{
     margin-top: 2rem;
 }
 
+.owl-dot:hover,
+.owl-dot.active{
+    background: #fff!important;
+}
+
 .owl-dot{
     height: 3px;
     width: 30px;
@@ -588,10 +600,20 @@ ul{
     transition: all 0.5s ease;
 }
 
-.owl-dot:hover,
-.owl-dot.active{
-    background: #fff!important;
+@media(max-width:768px){
+    .testimonial-col .head img{
+        margin-right: 2rem;
+    }
+
+    .text-muted{
+        margin-left: 1.5rem;
+    }
+
+    .testimonial-col{
+        padding: 2rem;
+    }
 }
+
 /* start footer styling */
 .footer{
     width: 100%;
@@ -637,12 +659,12 @@ ul{
 
 @media(max-width:768px){
     .footer{
-        padding: 3rem 4rem;
+        padding: 3rem 2rem;
         grid-template-columns: 1fr;
     }
 
     .footer-interes, .social{
-        min-width: 400px;
+        min-width: 320px;
     }
     
 
